@@ -21,5 +21,4 @@ class CustomUserSerializer(serializers.ModelSerializer):
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
     def validate(self, attrs):
         data = super().validate(attrs)
-        data.update({'user': CustomUserSerializer(self.user).data})
         return data
