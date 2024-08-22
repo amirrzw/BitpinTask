@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "rest_framework_simplejwt",
-    "rest_framework_simplejwt.token_blacklist",
     "users",
 ]
 
@@ -90,8 +89,8 @@ DATABASES = {
         'NAME': 'bitpin',
         'USER': 'postgres',
         'PASSWORD': '1381amirreza',
-        'HOST': 'localhost',  # or the appropriate host if using a different one
-        'PORT': '5432',        # default PostgreSQL port
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
